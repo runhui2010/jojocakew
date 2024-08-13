@@ -1,142 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JoJo Li | Cake Decorator Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Decorator | Job Application</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        margin: 0;
-        padding: 0;
-        color: #333;
-      }
-      .header {
-        background-color: #d35400;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      .header h1 {
-        margin: 0;
-        font-size: 40px;
-      }
-      .header p {
-        font-size: 20px;
-        margin: 5px 0;
-      }
-      .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: 30px auto;
-        background-color: #fff;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .section {
-        margin: 20px 0;
-      }
-      .section h2 {
-        font-size: 30px;
-        border-bottom: 2px solid #d35400;
-        padding-bottom: 10px;
-      }
-      .section p {
-        font-size: 18px;
-        line-height: 1.6;
-      }
-      .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-      .gallery img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        object-fit: cover;
-      }
-      .footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        margin-top: 30px;
-      }
-      .footer p {
-        margin: 0;
-        font-size: 16px;
-      }
-      .contact-info {
-        margin: 10px 0;
-        font-size: 18px;
-      }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .header {
+            background-color: #d35400;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header h1 {
+            font-size: 50px;
+            margin: 0;
+            animation: slideIn 2s ease-in-out;
+        }
+        .header p {
+            font-size: 20px;
+            margin: 10px 0 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 30px;
+            border-bottom: 2px solid #d35400;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            animation: growIn 2s ease-in-out;
+        }
+        @keyframes growIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d35400;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #e67e22;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 16px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+
     <div class="header">
-      <h1>Your Name</h1>
-      <p>Cake Decorator & Designer</p>
+        <h1>Your Name</h1>
+        <p>Professional Cake Decorator</p>
     </div>
 
     <div class="container">
-      <!-- About Section -->
-      <div class="section">
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm [Your Name], a passionate cake decorator with [X years] of
-          experience in creating stunning and delicious cakes for all occasions.
-          Whether it's a wedding, birthday, or special event, I love to bring
-          creativity and joy to each cake I design.
-        </p>
-      </div>
-
-      <!-- Portfolio Section -->
-      <div class="section">
-        <h2>My Work</h2>
-        <div class="gallery">
-          <!-- Replace with your online source image URLs -->
-    
-          <img src="1.JPG" alt="Cake 2" />
-          <img src="2.JPG" alt="Cake 2" />
-          <img src="3.JPG" alt="Cake 2" />
-          <img src="4.JPG" alt="Cake 2" />
-          <img src="5.JPG" alt="Cake 2" />
-          <img src="6.jpg" alt="Cake 2" />
-          <img src="7.jpg" alt="Cake 2" />
-          <img src="8.JPG" alt="Cake 2" />
-          <img src="9.JPG" alt="Cake 2" />
-          <img src="10.JPG" alt="Cake 2" />
-          <img src="11.JPG" alt="Cake 2" />
-          <img src="12.JPG" alt="Cake 2" />
-          <img src="13.JPG" alt="Cake 2" />
-          <img src="14.JPG" alt="Cake 2" />
-   
+        <!-- About Me Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a professional cake decorator with over [X years] of experience. I specialize in custom cake designs that are as beautiful as they are delicious. I take pride in every detail, ensuring that each creation is a true work of art. My passion is to bring joy and sweetness to every special occasion through my cakes.</p>
         </div>
-      </div>
 
-      <!-- Contact Section -->
-      <div class="section">
-        <h2>Contact Me</h2>
-        <p>
-          If you're interested in a custom cake or would like to discuss a
-          design idea, feel free to reach out to me!
-        </p>
-        <div class="contact-info">
-          <p>
-            Email:
-            <a href="mailto:yourname@example.com">yourname@example.com</a>
-          </p>
-          <p>Phone: +123-456-7890</p>
+        <!-- Portfolio Section -->
+        <div class="section">
+            <h2>My Work</h2>
+            <div class="gallery">
+                 <img src="1.JPG" alt="Cake 2" />
+                <img src="2.JPG" alt="Cake 2" />
+                <img src="3.JPG" alt="Cake 2" />
+                <img src="4.JPG" alt="Cake 2" />
+                <img src="5.JPG" alt="Cake 2" />
+                <img src="6.jpg" alt="Cake 2" />
+                <img src="7.jpg" alt="Cake 2" />
+                <img src="8.JPG" alt="Cake 2" />
+                <img src="9.JPG" alt="Cake 2" />
+                <img src="10.JPG" alt="Cake 2" />
+                <img src="11.JPG" alt="Cake 2" />
+                <img src="12.JPG" alt="Cake 2" />
+                <img src="13.JPG" alt="Cake 2" />
+                <img src="14.JPG" alt="Cake 2" />
+            </div>
         </div>
-      </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Skills & Expertise</h2>
+            <p>With a keen eye for detail and a love for creativity, I am skilled in a wide range of cake decorating techniques, including:</p>
+            <ul>
+                <li>Fondant sculpting and decoration</li>
+                <li>Buttercream piping and texturing</li>
+                <li>Custom cake toppers</li>
+                <li>Sugar flower artistry</li>
+                <li>3D cake carving and design</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section">
+            <h2>Contact Me</h2>
+            <p>If you would like to discuss a potential project or job opportunity, please don't hesitate to reach out. I'm excited to bring my expertise to new and exciting cake designs!</p>
+            <a href="mailto:yourname@example.com" class="btn">Contact Me</a>
+        </div>
     </div>
 
     <div class="footer">
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </div>
-  </body>
+
+</body>
 </html>
